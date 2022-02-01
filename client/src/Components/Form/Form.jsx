@@ -9,12 +9,23 @@ const Form = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    const name = NameRef.current.value;
-    const email = EmailRef.current.value;
-    const mobNum = NumRef.current.value;
-    const date = DateRef.current.value;
-    
-  }
+    const Name = NameRef.current.value;
+    const Email = EmailRef.current.value;
+    const MobNum = NumRef.current.value;
+    const Date = DateRef.current.value;
+    fetch("/api/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ Name, Email, MobNum, Date }),
+    })
+      .then((res) => res.json())
+      .then((data) => alert(data.Message))
+      .catch(() => alert("Failed"));
+    NameRef.current.value = "";
+    EmailRef.current.value = "";
+    NumRef.current.value = "";
+    DateRef.current.value = "";
+  };
 
   return (
     <div className="FormWrap">
