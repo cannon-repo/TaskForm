@@ -1,0 +1,74 @@
+.FormWrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.Form {
+    width: 90%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+.FormHead,
+.InputWrap {
+  width: 100%;
+}
+
+.InputWrap {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0px;
+}
+
+.InputWrap label,
+input {
+  width: 100%;
+  font-family: "Poppins";
+}
+
+.FormHead {
+  margin-bottom: 20px;
+  font-family: "Quicksand";
+  font-size: 26px;
+  color: #111;
+}
+
+.InputWrap label {
+  font-size: 16px;
+  color: #333;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+.InputWrap input {
+  padding: 7px 10px;
+  font-size: 17px;
+  border: none;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, purple, blue);
+  background-color: transparent;
+}
+
+.Btn{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    border: none;
+    background-color: purple;
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}

@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Poppins&family=Quicksand&display=swap');
+
 .App{
   width: 100%;
+  /* background: linear-gradient(to top, rgb(150,150,0), salmon, coral); */
+  background: linear-gradient(to top, #C5B4E3, #99BADD);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
